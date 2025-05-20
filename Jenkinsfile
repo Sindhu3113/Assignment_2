@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "your_dockerhub_username/minfy-demo"
+        IMAGE_NAME = "maramsindhu/minfy-demo"
         TAG = "latest"
     }
 
