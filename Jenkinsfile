@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "maramsindhu/minfy-demo"
+        IMAGE_NAME = "maramsindhu/minfy-python-demo-main"
         TAG = "latest"
     }
 
