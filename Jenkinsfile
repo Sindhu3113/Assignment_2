@@ -21,13 +21,6 @@ pipeline {
             }
         }
 
-        stage("Run the image")
-        {
-            steps{
-                sh 'docker run --rm minfy-python-demo-main'
-            }
-        }
-
         stage('Push to Docker Hub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
